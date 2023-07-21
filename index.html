@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Jaxson's Portfolio</title>
+  </head>
+  <body>
+    <!-- Sets up header, profile picture, and navigation bar with functioning jump links -->
+    <header>
+      <img
+        id="profilePicture"
+        src="https://avatars.githubusercontent.com/u/132233010?v=4"
+        alt="Picture of Jaxson Lybbert"
+      />
+      <h1>Jaxson Lybbert</h1>
+      <nav>
+        <ul>
+          <li><a href="#aboutME">About Me</a></li>
+          <li><a href="#myWork">My Work</a></li>
+          <li><a href="#contactMe">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About me Section -->
+      <section>
+        <h2 id="aboutMe">About Me</h2>
+        <p>
+          I am an enthusiastic young developer who is eager to learn and make a
+          difference. I am currently attending edX's Full Stack coding bootcamp
+          through the University of Denver. The course is challenging but
+          exciting, and I am looking forward to entering the professional world
+          as a web developer.
+        </p>
+      </section>
+      <!-- App display section took the most work, flexbox display with multiple rows to get the cards the way I wanted. No real apps to connect the cards to yet, so empty links for now.-->
+      <section>
+        <h2 id="myWork">My Work</h2>
+        <div class="projectsRow1">
+          <div class="firstProject">
+            <figure>
+              <h3 class="cardTitle">Fruit Finder</h3>
+              <a href="https://fruit-finder-f298ed9223ea.herokuapp.com"
+                ><img
+                  src="assets/Fruit-Finder-Screenshot.png"
+                  alt="Fruit Finder Screenshot"
+              /></a>
+            </figure>
+          </div>
+        </div>
+        <div class="projectsRow2">
+          <div class="otherProjects">
+            <figure>
+              <h3 class="cardTitle">NHL Fan Plan</h3>
+              <a href="https://corynko.github.io/NHL-Fan-Plan/"
+                ><img
+                  src="assets/NHL-Fan-Plan Screenshot.png"
+                  alt="NHL Fan Plan Screenshot"
+              /></a>
+            </figure>
+          </div>
+          <div class="otherProjects">
+            <figure>
+              <h3 class="cardTitle">Always Be Coding!</h3>
+              <a href="#"
+                ><img
+                  src="assets/Coding on Laptop.jpg"
+                  alt="HTML code on laptop"
+              /></a>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section with linked email and gitHub -->
+      <section>
+        <h2 id="contactMe">Contact Me</h2>
+        <div class="contactInfo">
+          <ul>
+            <li>Cell: 801-631-2604</li>
+            <li>
+              Email:
+              <a href="mailto:jax.a.lybb@gmail.com">jax.a.lybb@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/jaxson-lybbert">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
