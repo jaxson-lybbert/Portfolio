@@ -1,142 +1,185 @@
 /* Defines variables for color palette */
 
 :root {
-    --white: #fff;
-    --off-white: #eee;
-    --moonstone: #5C9EAD;
-    --payne-gray: #326273;
-    --tangerine: #E39774;
+  --white: #fff;
+  --off-white: #eee;
+  --moonstone: #5c9ead;
+  --payne-gray: #326273;
+  --tangerine: #e39774;
 }
 
 /* Universal declaration of margin, line height, font family, and padding, etc */
 
 * {
-    font-size: 20px;
-    line-height: 150%;
-    margin: 10px;
-    padding: 5px;
-    font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  line-height: 150%;
+  margin: 10px;
+  padding: 5px;
+  font-family: "PT Serif", serif;
 }
 
 body {
-    background-color: var(--moonstone);
-    color: var(--off-white);
+  background-color: var(--off-white);
+  color: black;
+}
+
+#NavBar {
+  background-color: var(--payne-gray);
+  border-radius: 5px;
 }
 
 /* Lots of flex containers used, not sure if all of them are necessary? */
 
 header {
-    font-size: 36px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    border-bottom: 3px solid var(--white);
+  font-size: 36px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--white);
 }
 
 /* List styling */
 
 ul a {
-    text-decoration: none;
-    color: var(--off-white);
+  text-decoration: none;
+  color: var(--off-white);
 }
 
 li {
-    display: inline-block;
+  display: inline-block;
 }
 
 ul a:hover {
-    background-color: var(--tangerine);
-    cursor: pointer;
+  background-color: var(--tangerine);
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Specific styles for profile picture */
 
 #profilePicture {
-    justify-self: start;
-    width: 200px;
-    height: 200px;
-    border-radius: 40px;
-    border: 5px solid var(--payne-gray);
+  justify-self: start;
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  border: 5px solid var(--payne-gray);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 h2 {
-    font-size: 30px;
-    display: inline-block;
-    border-bottom: 3px solid var(--payne-gray);
-    border-right: 3px solid var(--payne-gray);
+  font-size: 25px;
+  display: inline-block;
+  border-bottom: 3px solid var(--payne-gray);
+  border-right: 3px solid var(--payne-gray);
 }
 
 p {
-    margin: 10px;
-    padding: 20px;
+  margin: 10px;
+  padding: 20px;
 }
 
+/* Form Styling */
+
+#submitBtn {
+  border-color: none;
+  box-shadow: none;
+  color: var(--off-white);
+  background-color: var(--moonstone);
+  border-radius: 5px;
+}
+
+#submitBtn:hover {
+  border-color: var(--payne-gray);
+  transition: all 0.2s ease-in-out;
+}
 /* Classes used to display information correctly within main flexboxes */
 
 .cardTitle {
-    font-size: 24px;
-    position: relative;
-    display: inline-block;
-    top: 40px;
-    background-color: var(--payne-gray);
-    color: var(--off-white);
-    border-radius: 10px;
-    border: 4px solid var(--white);
-    z-index: 1;
+  font-size: 24px;
+  position: relative;
+  display: inline-block;
+  top: 40px;
+  background-color: var(--payne-gray);
+  color: var(--off-white);
+  border-radius: 10px;
+  border: 4px solid var(--white);
+  z-index: 1;
 }
 
 .projectsRow1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .firstProject {
-    flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .projectsRow2 {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .otherProjects {
-    flex-basis: 25%;
+  flex-basis: 25%;
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
-    border: 5px solid var(--tangerine);
-    border-radius: 10px;
-    padding: 0px;
+  max-width: 100%;
+  max-height: 100%;
+  border: 5px solid var(--tangerine);
+  border-radius: 10px;
+  padding: 0px;
 }
 
 .contactInfo {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footerList a {
+  text-decoration: none;
+  color: black;
+}
+
+#footerList li {
+  display: inline-block;
+}
+
+#footerList a:hover {
+  background-color: var(--moonstone);
+  color: var(--off-white);
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
-    border-top: 3px solid var(--white);
-    text-align: center;
-    color: var(--off-white);
+  border-top: 3px solid var(--payne-gray);
+  text-align: center;
+  color: black;
 }
 
 /* media querey for responsive display */
 
-@media screen  and (max-width: 768px) {
-    header, nav, .contactInfo {
-        flex-direction: column;
-        align-items: center;
-    }
-    
+@media screen and (max-width: 768px) {
+  header,
+  nav,
+  .contactInfo {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -38,68 +38,59 @@ export default function Contact() {
     setLastName("");
     setEmail("");
     setMessage("");
+    setErrorMessage("");
   };
 
   return (
-    <Form>
-      <Row>
-        <Col>
-          <Form.Control
-            value={firstName}
-            name="firstName"
-            onChange={handleInputChange}
-            placeholder="First name"
-          />
-        </Col>
-        <Col>
-          <Form.Control placeholder="Last name" />
-        </Col>
-      </Row>
-    </Form>
-    // <div>
-    //   <p>
-    //     If you have any questions or would like to contact me, please fill out
-    //     the following form, and I'll get back to you as soon as I can.
-    //   </p>
-    //   <form className="form">
-    //     <input
-    //       value={firstName}
-    //       name="firstName"
-    //       onChange={handleInputChange}
-    //       type="text"
-    //       placeholder="First Name"
-    //     />
-    //     <input
-    //       value={lastName}
-    //       name="lastName"
-    //       onChange={handleInputChange}
-    //       type="text"
-    //       placeholder="Last Name"
-    //     />
-    //     <input
-    //       value={email}
-    //       name="email"
-    //       onChange={handleInputChange}
-    //       type="email"
-    //       placeholder="Email"
-    //     />
-    //     <textarea
-    //       rows="5"
-    //       cols="60"
-    //       value={message}
-    //       name="message"
-    //       onChange={handleInputChange}
-    //       placeholder="Enter message here"
-    //     ></textarea>
-    //     <button type="button" onClick={handleFormSubmit}>
-    //       Submit
-    //     </button>
-    //   </form>
-    //   {errorMessage && (
-    //     <div>
-    //       <p className="error-text">{errorMessage}</p>
-    //     </div>
-    //   )}
-    // </div>
+    <div>
+      <h1>Contact</h1>
+      <Form>
+        <Row>
+          <Col>
+            <h3>Name</h3>
+            <Form.Control
+              value={firstName}
+              name="firstName"
+              onChange={handleInputChange}
+              placeholder="First name"
+            />
+            <Form.Control
+              value={lastName}
+              name="lastName"
+              onChange={handleInputChange}
+              placeholder="Last name"
+            />
+          </Col>
+          <Col>
+            <h3>Email</h3>
+            <Form.Control
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              placeholder="Email"
+            />
+          </Col>
+          <Col>
+            <h3>Message</h3>
+            <Form.Control
+              value={message}
+              name="message"
+              onChange={handleInputChange}
+              as="textarea"
+              placeholder="Type your message here"
+              style={{ height: "100px" }}
+            />
+          </Col>
+        </Row>
+        <Button id="submitBtn" type="submit" onClick={handleFormSubmit}>
+          Submit
+        </Button>
+      </Form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
+    </div>
   );
 }

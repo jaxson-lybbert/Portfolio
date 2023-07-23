@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <ul className="nav nav-tabs">
+    <ul id="NavBar" className="nav nav-tabs">
       <Link to={"/"} className="nav-item" style={{ marginRight: "2rem" }}>
         About Me
       </Link>
