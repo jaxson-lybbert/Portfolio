@@ -34,6 +34,8 @@ export default function Contact() {
       return;
     }
 
+    // Add actual emailing capability here later
+
     setFirstName("");
     setLastName("");
     setEmail("");
@@ -78,7 +80,7 @@ export default function Contact() {
               onChange={handleInputChange}
               as="textarea"
               placeholder="Type your message here"
-              style={{ height: "100px" }}
+              style={{ minWidth: "50%", height: "100px" }}
             />
           </Col>
         </Row>

@@ -5,8 +5,9 @@ export default function Footer() {
         <ul id="footerList">
           <li>Cell: 801-631-2604</li>
           <li>
-            Email:
-            <a href="mailto:jax.a.lybb@gmail.com">jax.a.lybb@gmail.com</a>
+            <a href="https://www.linkedin.com/in/jaxson-lybbert-aaa5a8267/">
+              LinkedIn
+            </a>
           </li>
           <li>
             <a href="https://github.com/jaxson-lybbert">GitHub</a>
