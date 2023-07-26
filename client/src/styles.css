@@ -127,6 +127,14 @@ i {
   transition: all 0.2s ease-in-out;
 }
 
+#resume {
+  max-width: 100%;
+  max-height: 100%;
+  border: 3px solid black;
+  border-radius: none;
+  padding: 0px;
+}
+
 img {
   max-width: 10%;
   max-height: 15%;
