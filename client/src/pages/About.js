@@ -10,6 +10,7 @@ export default function About() {
       <Row>
         <Col xs={6} md={4}>
           <Image
+            id="profile"
             src="assets/Jaxson-Lybbert-Profile-Picture.png"
             alt="Jaxson Lybbert Profile"
           />

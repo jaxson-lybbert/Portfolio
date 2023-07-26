@@ -135,7 +135,7 @@ i {
   padding: 0px;
 }
 
-img {
+#profile {
   max-width: 10%;
   max-height: 15%;
   border: 5px solid var(--tangerine);
