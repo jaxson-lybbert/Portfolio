@@ -103,36 +103,28 @@ i {
 /* Classes used to display information correctly within main flexboxes */
 
 .cardTitle {
-  font-size: 24px;
-  position: relative;
+  font-weight: bold;
+  font-size: 25px;
   display: inline-block;
-  top: 40px;
+  border-bottom: 3px solid var(--payne-gray);
+  border-right: 3px solid var(--payne-gray);
+}
+
+.cardText {
+  border-color: var(--payne-gray);
+  transition: all 0.2s ease-in-out;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--moonstone);
+  border-radius: 5px;
+}
+
+.cardLink:hover {
   background-color: var(--payne-gray);
-  color: var(--off-white);
-  border-radius: 10px;
-  border: 4px solid var(--white);
-  z-index: 1;
-}
-
-.projectsRow1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.firstProject {
-  flex-basis: 50%;
-}
-
-.projectsRow2 {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.otherProjects {
-  flex-basis: 25%;
+  transition: all 0.2s ease-in-out;
 }
 
 img {
