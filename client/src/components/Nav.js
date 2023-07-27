@@ -7,11 +7,11 @@ function Nav() {
         About Me
       </Link>
       <Link
-        to={"/portfolio"}
+        to={"/projects"}
         className="nav-item"
         style={{ marginRight: "2rem" }}
       >
-        Portfolio
+        Projects
       </Link>
       <Link to={"/resume"} className="nav-item" style={{ marginRight: "2rem" }}>
         Resume
