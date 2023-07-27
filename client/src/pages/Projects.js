@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/esm/Row";
 
-export default function Portfolio({ projectData }) {
+export default function Projects({ projectData }) {
   return (
     <div className="container">
       <Row>
