@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
+import Alert from "react-bootstrap/Alert";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -12,6 +13,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [sentMessage, setSentMessage] = useState(false);
 
   const contactForm = useRef();
 
@@ -49,6 +51,12 @@ export default function Contact() {
         (result) => {
           console.log(result.text);
 
+          setSentMessage(true);
+
+          setTimeout(() => {
+            setSentMessage(false);
+          }, 5000);
+
           setFirstName("");
           setLastName("");
           setEmail("");
@@ -64,6 +72,7 @@ export default function Contact() {
   return (
     <div>
       <h1>Contact</h1>
+      {sentMessage && <Alert id="alert">Message sent!</Alert>}
       <Form ref={contactForm} onSubmit={handleFormSubmit}>
         <Row>
           <Col>
