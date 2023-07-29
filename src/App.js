@@ -15,13 +15,13 @@ function App() {
         <div className="container">
           <Nav />
           <Routes>
-            <Route path="/" element={<About />} />
             <Route
               path="/projects"
               element={<Projects projectData={projectData} />}
             />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<About />} />
           </Routes>
         </div>
       </div>

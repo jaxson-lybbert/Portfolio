@@ -1,3 +1,5 @@
+import resumeSnapshot from "../assets/Resume-Snapshot.png";
+
 export default function Resume() {
   // Function will execute on click of button
   const onButtonClick = () => {
@@ -18,7 +20,7 @@ export default function Resume() {
     <>
       <h2>You can download a copy of my resume here.</h2>
       <center>
-        <img id="resume" src="assets/Resume-Snapshot.png" alt="Resume"></img>
+        <img id="resume" src={resumeSnapshot} alt="Resume"></img>
         <button id="submitBtn" onClick={onButtonClick}>
           Download
         </button>

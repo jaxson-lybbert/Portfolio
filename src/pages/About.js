@@ -3,6 +3,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
+import profilePicture from "../assets/Jaxson-Lybbert-Profile-Picture.png";
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
         <Col xs={6} md={4}>
           <Image
             id="profile"
-            src="assets/Jaxson-Lybbert-Profile-Picture.png"
+            src={profilePicture}
             alt="Jaxson Lybbert Profile"
           />
           <h1>Jaxson Lybbert</h1>

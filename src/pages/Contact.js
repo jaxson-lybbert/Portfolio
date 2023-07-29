@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { validateEmail } from "../utils/helpers";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -11,6 +12,8 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+
+  const contactForm = useRef();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -35,18 +38,33 @@ export default function Contact() {
     }
 
     // Add actual emailing capability here later
+    emailjs
+      .sendForm(
+        "service_h4zkx36",
+        "template_6uhqz75",
+        contactForm.current,
+        "CbM_MVmtmbr5ZJmji"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
 
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setMessage("");
-    setErrorMessage("");
+          setFirstName("");
+          setLastName("");
+          setEmail("");
+          setMessage("");
+          setErrorMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
     <div>
       <h1>Contact</h1>
-      <Form>
+      <Form ref={contactForm} onSubmit={handleFormSubmit}>
         <Row>
           <Col>
             <h3>Name</h3>
@@ -84,7 +102,7 @@ export default function Contact() {
             />
           </Col>
         </Row>
-        <Button id="submitBtn" type="submit" onClick={handleFormSubmit}>
+        <Button id="submitBtn" type="submit">
           Submit
         </Button>
       </Form>

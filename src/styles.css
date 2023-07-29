@@ -99,6 +99,7 @@ i {
 #submitBtn:hover {
   border-color: var(--payne-gray);
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 /* Classes used to display information correctly within main flexboxes */
 
