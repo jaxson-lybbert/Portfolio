@@ -1,5 +1,12 @@
 const projectData = [
   {
+    name: "Code Gauntlet",
+    summary:
+      "A full stack application that allows users to practice JavaScript coding skills. Users can select challenges based on preferred difficulty level.",
+    repoLink: "https://github.com/ryantixier/Code-Gauntlet",
+    deployLink: "https://code-gauntlet-3e9a71d036dd.herokuapp.com",
+  },
+  {
     name: "Fruit Finder",
     summary:
       "A social fruit tracking application that allows users to log where they've found the freshest fruit so others can stay in the know.",
@@ -31,12 +38,6 @@ const projectData = [
     summary:
       "A functional MySQL Sequelize backend built out to simulate an e-commerce site that can be fully tested using Insomnia.",
     repoLink: "https://github.com/jaxson-lybbert/E-Commerce-Back-End",
-  },
-  {
-    name: "SVG Logo Maker",
-    summary:
-      "A CLI application that generates an SVG logo based off of user input.",
-    repoLink: "https://github.com/jaxson-lybbert/SVG-Logo-Maker",
   },
 ];
 

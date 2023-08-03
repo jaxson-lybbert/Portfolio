@@ -55,7 +55,7 @@ export default function Contact() {
 
           setTimeout(() => {
             setSentMessage(false);
-          }, 5000);
+          }, 10000);
 
           setFirstName("");
           setLastName("");
