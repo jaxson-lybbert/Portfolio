@@ -23,7 +23,7 @@ export default function Resume() {
       <center>
         <img id="resume" src={resumeSnapshot} alt="Resume"></img>
 
-        <button id="submitBtn" onClick={onButtonClick}>
+        <button id="submitBtn">
           {
             <a className="downloadLink" href={resumePDF}>
               Download
