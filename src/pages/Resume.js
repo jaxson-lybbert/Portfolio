@@ -1,4 +1,4 @@
-import resumeSnapshot from "../assets/Resume-Snapshot.png";
+import resumeSnapshot from "../assets/Resume Snapshot.png";
 import resumePDF from "../assets/Technical Resume.pdf";
 
 export default function Resume() {
