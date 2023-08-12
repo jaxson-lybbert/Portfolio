@@ -1,5 +1,5 @@
 import resumeSnapshot from "../assets/Resume-Snapshot.png";
-import resumePDF from "../assets/Jaxson Lybbert Resume.pdf";
+import resumePDF from "../assets/Technical Resume.pdf";
 
 export default function Resume() {
   // // Function will execute on click of button
